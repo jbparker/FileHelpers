@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>FileHelpers.ExcelNPOIStorage</id>
-        <version>3.0.5</version>
+        <version>3.2.6</version>
         <title>FileHelpers.ExcelNPOIStorage</title>
-        <authors>Marcos Meli</authors>
+        <authors>Marcos Meli and Contributors</authors>
         <owners>Marcos Meli</owners>
         <licenseUrl>http://www.filehelpers.net/#license</licenseUrl>
         <projectUrl>http://www.filehelpers.net</projectUrl>
@@ -14,13 +14,13 @@
         <summary>Extension for FileHelpers to support Excel read/write operations using NPOI Library</summary>
         <releaseNotes>www.filehelpers.net/changelog</releaseNotes>
         <copyright>Marcos Meli - Devoo</copyright>
-        <tags>Excel, Import, Export, FileHelpers, FileHelper</tags>
+        <tags>Excel, Data, Import, Export, FileHelpers, FileHelper, .Net</tags>
         <frameworkAssemblies>
             <frameworkAssembly assemblyName="System.Data" targetFramework="" />
             <frameworkAssembly assemblyName="System.Xml" targetFramework="" />
         </frameworkAssemblies>        
         <dependencies>
-            <dependency id="FileHelpers" version="-VisibleVersion-" />
+            <dependency id="FileHelpers" version="3.2.6" />
         </dependencies>
     </metadata>
     <files>

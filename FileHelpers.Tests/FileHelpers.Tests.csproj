@@ -30,7 +30,7 @@
     </UpgradeBackupLocation>
     <SignAssembly>true</SignAssembly>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -107,12 +107,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Moq, Version=4.2.1507.118, Culture=neutral, PublicKeyToken=69f491c39445e920">
-      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -153,6 +155,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tests\Common\ArrayFields.cs" />
+    <Compile Include="Tests\Common\AsyncEnumerator.cs" />
     <Compile Include="Tests\Common\ChineseSupport.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -247,7 +250,8 @@
     <Compile Include="Tests\Common\MultiLine.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tests\Common\MultiRecord.cs">
+    <Compile Include="Tests\Multirecord\MultiRecord2.cs" />
+    <Compile Include="Tests\Multirecord\MultiRecord.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tests\Common\NullValues.cs">
@@ -373,6 +377,7 @@
     <Compile Include="Types\Customers\CustomersVerticalBar.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Types\Customers\CustomersVerticalBarWithFieldCaption.cs" />
     <Compile Include="Types\Orders\OrdersFixed.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -430,7 +435,6 @@
     <Compile Include="..\FileHelpers\VersionInfo.cs">
       <Link>VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="Data\FluentCode.cs" />
     <Compile Include="Data\FileTestBase.cs" />
     <Compile Include="Tests\Common\Autoproperties.cs" />
     <Compile Include="Tests\Common\SorterTests.cs" />
@@ -608,6 +612,7 @@
     <Content Include="Data\Good\ReadAsDataTable.txt" />
     <Content Include="Data\Good\RealCsvComma1.txt" />
     <Content Include="Data\Good\RealCsvComma2.txt" />
+    <Content Include="Data\Good\RealCsvCommaBlankLines1.txt" />
     <Content Include="Data\Good\RealCsvTab1.txt" />
     <Content Include="Data\Good\RealCsvTab2.txt" />
     <Content Include="Data\Good\RealCsvVerticalBar1.txt" />
